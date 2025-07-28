@@ -1,2 +1,7 @@
 # Human-readable-duration-format
-Codewars - Human readable duration format Java
+Codewars - Human readable duration format (Java)
+This is my solution for the mentioned task in Java. First of all I made the the examinations for the input value, based on the task description. Following that, I made constant integers to fix minute, hour, day and year in seconds. Using these values I was able to calculate each unit from the input number in seconds. After each operation the input value was modified by using modulo (division with remainder) to subtract the result from the original input. Continuing this method I was able to define every unit (year, day, hour, minute, second). 
+After that the program continues to make condition tests, whether there is a year, hour, etc... and if yes, and the result variable is not empty, valu is added to the result variable. Also to comply the rules, there is a check if the value to add needs a plural sign or not. For that I used the ternary operator. Result value is added by a coma and a space.
+At the end I returned the result variable. 
+
+To ensure the proper running I made a junit test, using assertEquals function.
